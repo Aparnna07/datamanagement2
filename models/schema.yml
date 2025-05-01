@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: weather_dataset
+    tables:
+      - name: barcelona_raw
+      - name: brussels_raw
+      - name: florence_raw
+      - name: madrid_raw
+      - name: live_weather_data
+      - name: events_raw
+
+models:
+  - name: stg_airbnb_data
+  - name: stg_weather_data
+  - name: stg_events_data
+  - name: mart_airbnb_weather_events
